@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050510" />
+  <meta name="description" content="Un pequeño universo hecho con amor." />
+  <title>Un universo para ti 💛</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <canvas id="universe"></canvas>
+  <div class="nebula nebula-one"></div><div class="nebula nebula-two"></div><div class="nebula nebula-three"></div>
+  <div id="intro" class="intro">
+    <div class="intro-glow"></div>
+    <div class="intro-content">
+      <span class="eyebrow">PARA TI</span>
+      <h1>Hay universos que comienzan con una estrella.</h1>
+      <p>Este comenzó pensando en ti.</p>
+      <button id="startButton" class="start-button" aria-label="Entrar al universo"><span>Entrar al universo</span><span class="button-star">✦</span></button>
+      <small>Usa el mouse, tu dedo o simplemente desplázate.</small>
+    </div>
+  </div>
+  <main id="experience" class="experience" aria-hidden="true">
+    <section class="hero scene">
+      <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
+      <div class="hero-content reveal"><span class="eyebrow">UN UNIVERSO PARA TI</span><h2>Entre infinitas posibilidades,<br><em>siempre te elegiría a ti.</em></h2><p>Desliza lentamente. Hay pequeñas cosas esperándote entre las estrellas.</p></div>
+      <div class="scroll-hint"><span>desliza</span><div class="scroll-line"></div></div>
+    </section>
+    <section class="scene flower-scene">
+      <div class="floating-flower flower-left reveal"><div class="bouquet bouquet-large" aria-label="Ramo de flores amarillas">
+        <div class="flower f1"><i></i><i></i><i></i><i></i><i></i><b></b></div><div class="flower f2"><i></i><i></i><i></i><i></i><i></i><b></b></div><div class="flower f3"><i></i><i></i><i></i><i></i><i></i><b></b></div><div class="flower f4"><i></i><i></i><i></i><i></i><i></i><b></b></div><div class="flower f5"><i></i><i></i><i></i><i></i><i></i><b></b></div>
+        <div class="stem s1"></div><div class="stem s2"></div><div class="stem s3"></div><div class="stem s4"></div><div class="stem s5"></div><div class="wrap"></div><div class="ribbon"></div>
+      </div></div>
+      <div class="message-card reveal"><span class="constellation">✦ · ✧ · ✦</span><h3>Eres mi lugar favorito.</h3><p>No importa cuánto cambie el mundo, siempre habrá algo en ti que se siente como volver a casa.</p></div>
+    </section>
+    <section class="scene quote-scene"><div class="planet planet-one"></div><div class="planet-ring"></div><div class="quote reveal"><span>02 / INFINITO</span><blockquote>“De todas las estrellas,<br>siempre miraría la tuya.”</blockquote></div></section>
+    <section class="scene flower-scene reverse">
+      <div class="message-card reveal"><span class="constellation">☾ · ✦ · ☼</span><h3>Gracias por existir.</h3><p>Por las pequeñas cosas, por las grandes, y por todas esas que parecen insignificantes hasta que llevan tu nombre.</p></div>
+      <div class="floating-flower flower-right reveal"><div class="bouquet bouquet-small" aria-label="Ramo de flores amarillas">
+        <div class="flower f1"><i></i><i></i><i></i><i></i><i></i><b></b></div><div class="flower f2"><i></i><i></i><i></i><i></i><i></i><b></b></div><div class="flower f3"><i></i><i></i><i></i><i></i><i></i><b></b></div><div class="flower f4"><i></i><i></i><i></i><i></i><i></i><b></b></div><div class="stem s1"></div><div class="stem s2"></div><div class="stem s3"></div><div class="stem s4"></div><div class="wrap"></div><div class="ribbon"></div>
+      </div></div>
+    </section>
+    <section class="scene interactive-scene">
+      <div class="interactive-copy reveal"><span class="eyebrow">TOCA LAS ESTRELLAS</span><h3>Algunas cosas solo aparecen cuando decides acercarte.</h3></div>
+      <button class="wish-star star-a" data-message="Te quiero">✦</button><button class="wish-star star-b" data-message="Eres luz">✧</button><button class="wish-star star-c" data-message="Siempre tú">✦</button><button class="wish-star star-d" data-message="Mi casualidad favorita">✧</button><button class="wish-star star-e" data-message="Qué bonito coincidir">✦</button>
+      <div id="starMessage" class="star-message" aria-live="polite"></div>
+    </section>
+    <section class="scene final-scene"><div class="final-glow"></div><div class="final-content reveal"><div class="mini-sunflower" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><b></b></div><span class="eyebrow">Y SI EL UNIVERSO VOLVIERA A EMPEZAR...</span><h2>Volvería a encontrarte.</h2><p>Una y otra vez.</p><div class="signature">💛</div></div></section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
